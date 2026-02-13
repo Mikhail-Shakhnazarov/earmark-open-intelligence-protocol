@@ -2,7 +2,7 @@
 
 **Version 1.0** | Berlin, February 2026
 
-## Introduction (a readme for the readme), a not from the author:
+## Introduction (a readme for the readme), a note from the author:
 
 This project is built **for collaboration**. The Open Intelligence Protocol is an open, evolving framework -- dive in, contribute, and help shape how we think about machine-intelligible systems. This is not a compercial project. Ths project is a demonstration of a comercial practice of (coming soon, tm, etc.), and one **cannot copyright an idea**. 
 
