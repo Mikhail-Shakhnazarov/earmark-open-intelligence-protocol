@@ -13,6 +13,7 @@ For current project needs, and to see how you can contribute, contact me. It’s
 Best,
 -- Mikhail
 
+Click here: https://notebooklm.google.com/notebook/4b99602f-51da-4b6f-b8cb-47c5b7217731
 
 ## Overview
 
