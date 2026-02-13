@@ -10,10 +10,14 @@ This project is built **for collaboration**. The Open Intelligence Protocol is a
 
 For current project needs, and to see how you can contribute, contact me. It’s also good enough to simply go build something on your own. So do that — and let’s talk.
 
-Best,
--- Mikhail
+I want to stress something burried in section 5:
 
-Click here: https://notebooklm.google.com/notebook/4b99602f-51da-4b6f-b8cb-47c5b7217731
+> The protocol serves anyone who needs language model output to be reliable, verifiable, and accumulative rather than disposable. This includes individual practitioners maintaining personal knowledge systems, teams that need consistent governed output across members and tools, and developers building applications that require structured, verifiable text generation.
+>
+> The protocol does not require specialized technical knowledge beyond literacy and the willingness to maintain structured text. The skill is teachable. The tools are available.
+>
+> The barrier is conceptual, not technical: the belief that structural thinking about one's own knowledge requires institutional support. It does not. The public library, not the scholar's study, is the historical parallel.
+
 
 ## Overview
 
