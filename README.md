@@ -2,6 +2,13 @@
 
 **Version 1.0** | Berlin, February 2026
 
+## Introduction (a readme for the readme)
+
+This project is built **for collaboration**. The Open Intelligence Protocol is an open, evolving framework—dive in, contribute, and help shape how we think about machine-intelligible systems. This is not a compercial project. Ths project is a demonstration of a comercial practice of (coming soon, tm, etc.), and one **cannot copyright an idea**. 
+
+**author's suggestion for human readers:** First look at 01 the manifest (it's a table of contents) then read 02 the introduction for humans. After that, if you want to experience it in a new way, oad the complete corpus into NotebookLM or similar tools and let the system analyze its own logic. You'll see how the protocol becomes a lens through which the lens itself can be understood. It's meta, and it works.
+
+
 ## Overview
 
 The **Earmark Open Intelligence Protocol** is a formal specification for structuring, verifying, and governing machine-intelligible systems. This repository contains the complete protocol specification as a series of conceptual and technical documents, designed to serve as both a reference implementation and a durable publication surface.
