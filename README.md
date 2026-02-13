@@ -28,14 +28,14 @@ The protocol establishes a framework for:
 
 The protocol specification consists of eight primary documents:
 
-1. **[01_CORPUS_MANIFEST.pdf](./01_CORPUS_MANIFEST.pdf)** — Foundational concepts and corpus structure
-2. **[02_PROTOCOL_INTRODUCTION.pdf](./02_PROTOCOL_INTRODUCTION.pdf)** — Protocol overview and core principles
-3. **[03_EXPLAINED_RUNTIME.pdf](./03_EXPLAINED_RUNTIME.pdf)** — Runtime behavior and operational semantics
-4. **[04_STRUCTURAL_OBLIGATIONS.pdf](./04_STRUCTURAL_OBLIGATIONS.pdf)** — Structural requirements and constraints
-5. **[05_COORDINATE_SYSTEM.pdf](./05_COORDINATE_SYSTEM.pdf)** — Spatial and logical coordinate frameworks
-6. **[06_EPISTEMIC_GOVERNANCE.pdf](./06_EPISTEMIC_GOVERNANCE.pdf)** — Knowledge representation and governance
-7. **[07_INTRINSIC_SIGNAGE.pdf](./07_INTRINSIC_SIGNAGE.pdf)** — Marking and annotation standards
-8. **[08_TERSE_STYLE.pdf](./08_TERSE_STYLE.pdf)** — Specification style and documentation norms
+1. **./01_CORPUS_MANIFEST.pdf** — Foundational concepts and corpus structure
+2. **./02_PROTOCOL_INTRODUCTION.pdf** — Protocol overview and core principles
+3. **./03_EXPLAINED_RUNTIME.pdf** — Runtime behavior and operational semantics
+4. **./04_STRUCTURAL_OBLIGATIONS.pdf** — Structural requirements and constraints
+5. **./05_COORDINATE_SYSTEM.pdf** — Spatial and logical coordinate frameworks
+6. **./06_EPISTEMIC_GOVERNANCE.pdf** — Knowledge representation and governance
+7. **./07_INTRINSIC_SIGNAGE.pdf** — Marking and annotation standards
+8. **./08_TERSE_STYLE.pdf** — Specification style and documentation norms
 
 ## License
 
