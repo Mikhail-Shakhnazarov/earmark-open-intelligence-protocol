@@ -4,11 +4,11 @@
 
 ## Introduction (a readme for the readme), a note from the author:
 
-This project is built **for collaboration**. The Open Intelligence Protocol is an open, evolving framework -- dive in, contribute, and help shape how we think about machine-intelligible systems. This is not a compercial project. Ths project is a demonstration of a comercial practice of (coming soon, tm, etc.), and one **cannot copyright an idea**. 
+This project is built **for collaboration**. The Open Intelligence Protocol is an open, evolving framework — dive in, contribute, and help shape how we think about machine-intelligible systems. This is not a commercial product. It is a demonstration of a commercial practice (coming soon, etc.), and one **cannot copyright an idea**.
 
-**author's suggestion for human readers:** 01_DARK is preferred, 02_LIGHT is for daylight. It will hurt your eyes. First look at 01 the manifest (it's a table of contents) then read 02 the introduction for humans. After that, if you want to experience it in a new way, oad the complete corpus into NotebookLM or similar tools and let the system analyze its own logic. You'll see how the protocol becomes a lens through which the lens itself can be understood. It's meta, and it works. Let teh chatbot explain it, ask questions, be maximally curious if you want to. This is version 1, a proof by demonstration. :)
+**Author’s suggestion for human readers:** 01_DARK is preferred. 02_LIGHT is for daylight — it will hurt your eyes. Start with 01, the Manifest (it’s a table of contents), then read 02, the Introduction for humans. After that, if you want to experience it differently, load the complete corpus into NotebookLM or a similar tool and let the system analyze its own logic. You’ll see how the protocol becomes a lens through which the lens itself can be understood. It’s meta, and it works. Let the chatbot explain it. Ask questions. Be maximally curious if you want to. This is version 1 — a proof by demonstration.
 
-For current project needs and to see, how you can contribute, contact me. This is also good enought to just go build something on your own. So do that, and let's talk.
+For current project needs, and to see how you can contribute, contact me. It’s also good enough to simply go build something on your own. So do that — and let’s talk.
 
 Best,
 -- Mikhail
