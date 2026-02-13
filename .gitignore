@@ -1,0 +1,8 @@
+# Ignore design PDFs
+09_DESIGN_LANGUAGE.pdf
+
+# Ignore scripts folder
+scripts/
+
+# Ignore specific markup file
+markup/09_DESIGN_LANGUAGE.md
