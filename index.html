@@ -5,18 +5,88 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>EARMARK</title>
   <style>
-    :root{--paper:#111315;--ink:#E6E2D9;--mid:#9A9A9A;--rule:#3A3A3A;--accent:#E0612E;}
-    html,body{height:100%} body{margin:0;background:var(--paper);color:var(--ink);}
-    .frame{height:100%;display:flex;align-items:center;justify-content:center;padding:32px;box-sizing:border-box;}
-    .mark{text-align:center;text-transform:uppercase;letter-spacing:.06em;
-      font-family:"Arial Narrow","Liberation Sans Narrow","Helvetica Neue",Arial,sans-serif;
-      font-weight:700;font-size:clamp(18px,2.2vw,28px);line-height:1.15;max-width:46ch;user-select:none;}
-    .sep{color:var(--accent);padding:0 .35em;} .mid{color:var(--mid);font-weight:700;}
+    :root{
+      --paper:#111315;
+      --ink:#E6E2D9;
+      --mid:#9A9A9A;
+      --rule:#3A3A3A;
+      --accent:#E0612E;
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--paper);
+      color:var(--ink);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: geometricPrecision;
+    }
+
+    .frame{
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:48px 24px;
+      box-sizing:border-box;
+    }
+
+    /* Keep it centered and calm; scale responsively */
+    .logo{
+      width:min(920px, 92vw);
+      height:auto;
+      display:block;
+    }
+
+    /* Optional: subtle baseline rule if you ever want it */
+    .rule{ height:1px; background:var(--rule); width:min(620px, 80vw); margin:22px auto 0; }
   </style>
 </head>
 <body>
-  <main class="frame">
-    <div class="mark">EARMARK<span class="sep">//</span>MACHINES FOR THINKING<span class="sep">//</span><span class="mid">COMING SOON</span></div>
+  <main class="frame" role="document" aria-label="EARMARK — MACHINES FOR THINKING — COMING SOON">
+    <!-- SVG enforces equal line width via textLength -->
+    <svg class="logo" viewBox="0 0 1000 320" role="img" aria-label="EARMARK / MACHINES FOR THINKING / COMING SOON" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <style>
+          .ink{
+            fill: var(--ink);
+            font-family: "Arial Narrow","Liberation Sans Narrow","Helvetica Neue",Arial,sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+          }
+          .mid{
+            fill: var(--mid);
+            font-family: "Arial Narrow","Liberation Sans Narrow","Helvetica Neue",Arial,sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+          }
+          .accent{ fill: var(--accent); }
+        </style>
+      </defs>
+
+      <!-- Lock both lines to the same rendered width:
+           left margin = 100, textLength = 800, so both occupy [100..900]. -->
+      <text class="ink" x="100" y="140" font-size="86"
+            lengthAdjust="spacingAndGlyphs" textLength="800">
+        EARMARK
+      </text>
+
+      <text class="ink" x="100" y="220" font-size="64"
+            lengthAdjust="spacingAndGlyphs" textLength="800">
+        MACHINES FOR THINKING
+      </text>
+
+      <!-- Coming soon, centered under the block -->
+      <text class="mid" x="500" y="282" font-size="44" text-anchor="middle">
+        COMING SOON
+      </text>
+
+      <!-- Optional tiny accent ticks (comment out if you want pure type) -->
+      <rect class="accent" x="476" y="296" width="48" height="4" rx="2" />
+    </svg>
   </main>
 </body>
 </html>
