@@ -1,12 +1,12 @@
 
-**CONSIDER THIS AN ARG**
+
+
+# **CONSIDER THIS AN ARG**
 
 **OPERATOR:** MIKHAIL SHAKHNAZAROV
 
 (c) all rights reserved copyright might be meaningless
 
-
-A NOTE FROM THE AUTHOR: **TREAT THIS AS AN ARG**
 
 ---
 # **BEGIN SYSTEM TRANSCRIPT** //
