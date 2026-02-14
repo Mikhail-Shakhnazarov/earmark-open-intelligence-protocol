@@ -18,9 +18,9 @@
       margin:0;
       background:var(--paper);
       color:var(--ink);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: geometricPrecision;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      text-rendering:geometricPrecision;
     }
 
     .frame{
@@ -28,32 +28,30 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      padding:48px 24px;
+      padding:96px 24px;   /* negative space */
       box-sizing:border-box;
     }
 
-    /* Keep it centered and calm; scale responsively */
+    /* keep the mark compact */
     .logo{
-      width:min(920px, 92vw);
+      width:min(640px, 86vw);
       height:auto;
       display:block;
     }
-
-    /* Optional: subtle baseline rule if you ever want it */
-    .rule{ height:1px; background:var(--rule); width:min(620px, 80vw); margin:22px auto 0; }
   </style>
 </head>
 <body>
-  <main class="frame" role="document" aria-label="EARMARK — MACHINES FOR THINKING — COMING SOON">
-    <!-- SVG enforces equal line width via textLength -->
-    <svg class="logo" viewBox="0 0 1000 320" role="img" aria-label="EARMARK / MACHINES FOR THINKING / COMING SOON" xmlns="http://www.w3.org/2000/svg">
+  <main class="frame" role="document" aria-label="EARMARK — MACHINES FOR THINKING — COMING SOON // 01">
+    <svg class="logo" viewBox="0 0 1000 420" role="img"
+         aria-label="EARMARK / MACHINES FOR THINKING / COMING SOON // 01"
+         xmlns="http://www.w3.org/2000/svg">
       <defs>
         <style>
           .ink{
             fill: var(--ink);
             font-family: "Arial Narrow","Liberation Sans Narrow","Helvetica Neue",Arial,sans-serif;
             font-weight: 700;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.04em;
             text-transform: uppercase;
           }
           .mid{
@@ -67,25 +65,21 @@
         </style>
       </defs>
 
-      <!-- Lock both lines to the same rendered width:
-           left margin = 100, textLength = 800, so both occupy [100..900]. -->
-      <text class="ink" x="100" y="140" font-size="86"
-            lengthAdjust="spacingAndGlyphs" textLength="800">
+      <!-- Both lines occupy the same width: [220..780] -->
+      <text class="ink" x="220" y="175" font-size="56"
+            lengthAdjust="spacingAndGlyphs" textLength="560">
         EARMARK
       </text>
 
-      <text class="ink" x="100" y="220" font-size="64"
-            lengthAdjust="spacingAndGlyphs" textLength="800">
+      <text class="ink" x="220" y="242" font-size="42"
+            lengthAdjust="spacingAndGlyphs" textLength="560">
         MACHINES FOR THINKING
       </text>
 
-      <!-- Coming soon, centered under the block -->
-      <text class="mid" x="500" y="282" font-size="44" text-anchor="middle">
-        COMING SOON
+      <text class="mid" x="500" y="318" font-size="32" text-anchor="middle">
+        <tspan>COMING SOON</tspan>
+        <tspan class="accent"> // 01</tspan>
       </text>
-
-      <!-- Optional tiny accent ticks (comment out if you want pure type) -->
-      <rect class="accent" x="476" y="296" width="48" height="4" rx="2" />
     </svg>
   </main>
 </body>
