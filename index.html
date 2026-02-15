@@ -25,7 +25,7 @@
     }
     
     .frame {
-      height: 100%;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -71,6 +71,61 @@
       user-select: none;
     }
     
+    /* FAQ Section */
+    .faq-section {
+      background: var(--paper);
+      padding: 80px 32px 120px;
+      border-top: 1px solid var(--accent);
+    }
+    
+    .faq-container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    
+    .faq-header {
+      font-family: "Arial Narrow", "Liberation Sans Narrow", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 24px;
+      color: var(--ink);
+      margin-bottom: 60px;
+      text-align: left;
+    }
+    
+    .faq-item {
+      margin-bottom: 48px;
+    }
+    
+    .faq-question {
+      font-family: "Arial Narrow", "Liberation Sans Narrow", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 15px;
+      color: var(--accent);
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+    
+    .faq-answer {
+      font-family: "Liberation Mono", "Courier New", monospace;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--ink);
+      text-align: left;
+      white-space: pre-wrap;
+    }
+    
+    .faq-answer p {
+      margin: 0 0 16px 0;
+    }
+    
+    .faq-answer p:last-child {
+      margin-bottom: 0;
+    }
+    
     @media (max-width: 640px) {
       .frame {
         padding: 80px 24px;
@@ -83,6 +138,23 @@
       
       .sep {
         padding: 0 8px;
+      }
+      
+      .faq-section {
+        padding: 60px 24px 80px;
+      }
+      
+      .faq-header {
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+      
+      .faq-question {
+        font-size: 13px;
+      }
+      
+      .faq-answer {
+        font-size: 13px;
       }
     }
   </style>
@@ -149,5 +221,139 @@
       </nav>
     </div>
   </main>
+  
+  <section class="faq-section">
+    <div class="faq-container">
+      <h2 class="faq-header">Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">0. What is this? //</div>
+        <div class="faq-answer">it depends on what you see.
+
+<strong>it's text about text:</strong> this project can be confusing at first because it's circular - it's a text-based project about how text operates, but once we move past that:
+
+<strong>augmented intelligence:</strong> A thinker can think better. A planner can plan better.
+
+<strong>a new medium for human communication:</strong> the author uses a variation of this system to produce most written artifacts and publications. The texts can then be loaded into an LLM runtime. That runtime can be used to explain the text.
+
+<strong>a new medium for human collaboration:</strong> augmented thinking scales laterally and in parallel, not vertically. The protocol does not dictate the rules of any community of practice -- it simply outlines why rules are necessary. One can vote on the rules or agree to a shared framework of rules.
+
+<strong>a move away from disposable knowledge and slop.</strong> High quality text takes work, not a bigger GPU.
+
+<strong>it is just writing.</strong> At its simplest level, Earmark is a set of rules for writing and organizing notes so that an LLM can help the operator think without "forgetting" or "drifting" over time.
+
+<strong>a literacy for the AI age</strong> -- a disciplined way of taking notes that ensures AI-assisted thinking stays reliable, verifiable, and permanent.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">1. Is this an AI product? //</div>
+        <div class="faq-answer">No.
+
+Earmark is not an assistant. Not an agent. Not a tool. It is a protocol — a method for writing that makes human thought portable <strong>across</strong> LLM runtimes.
+
+The AI does not "do" the thinking. The AI executes transformations on structured text according to rules the text describes. The intelligence lives in the artifacts the operator creates, not in the model.
+
+Think of it as a filing system that an LLM can read, not an LLM that reads for the operator.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">2. Is this art or is this tech? //</div>
+        <div class="faq-answer">Yes.
+
+The question assumes a boundary that does not hold here. Earmark resists familiar categories because it operates as a medium -- something that enables expression and thought rather than something that produces a predetermined output.
+
+One can use it to think. One can use it to publish. One can use it to build tools. The protocol does not prescribe which.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">3. Why should I care? //</div>
+        <div class="faq-answer">AI must remain transparent. The rules it executes must be public.
+
+This project is proof by demonstration that the "intelligence" in AI is simply governance and bureaucracy — the same sense of intelligence as in intelligence work or spy-craft. It is information processing.
+
+If you wants AI output that is reliable, verifiable, social, and accumulative -- not disposable, not vendor-locked, not subject to model drift -- then structured governance becomes a functional necessity.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">4. What LLM does it use? //</div>
+        <div class="faq-answer">Whichever one the operator chooses.
+
+The LLM vendor is a commodity runtime. The intelligence lives in the artifacts -- the structured text the operator writes. Earmark artifacts are portable across Claude, GPT, Gemini, or any future model capable of reading instructions.
+
+This is not a product tied to a specific vendor. It is a method that survives vendor changes, price changes, and model deprecations.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">5. Who is this for? //</div>
+        <div class="faq-answer">it's not for everyone, but anyone can use it.
+
+Earmark is operator-gated, not access-gated. It is designed for someone who already thinks in structured text -- or wants to. High agency. Time-scarce. Allergic to tool lock-in. Comfortable with the constraint that clarity requires discipline.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">6. Do I have to follow the rules? //</div>
+        <div class="faq-answer">no.
+
+The protocol simply explains its own rules, making itself transparent. It also shows why rules are necessary.
+
+If the operator chooses to use the protocol -- because reliability, verifiability, and portability matter -- then following rules and communicating what those rules are becomes a functional necessity. But the protocol does not enforce compliance. It explains itself and lets the operator decide.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">7. What do I need to use this? //</div>
+        <div class="faq-answer">Literacy and a willingness to maintain structured text.
+
+No specialized technical or philosophical knowledge is required. No software beyond a text editor and access to an LLM. No subscription. No installation.
+
+The skill floor is: can the operator write clearly, organize notes hierarchically, and follow formatting conventions? If yes, the protocol is accessible.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">8. What happens to my data? Who owns it? //</div>
+        <div class="faq-answer">earmark does not collect, store, or access data. It is a method, not a service.
+
+your data is your data. This project is a framework on working with data and and a demonstration of how you can build your own.
+
+No subscription. No retained dependency. No vendor lock-in. The protocol specifications are published under Creative Commons Attribution (CC-BY). The operator's authored content -- the artifacts, the notes, the knowledge -- remains copyrighted to the operator.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">9. What if the AI gets something wrong? //</div>
+        <div class="faq-answer">an LLM is a governed combinatorial engine. The LLM executing against a corpus is still a combinatorial engine. The operator corrects, rejects, or reframes. It's just writing.
+
+Outputs are drafts, not authority. The protocol assumes the LLM will make mistakes -- that is why verification schemes, intrinsic signage, and epistemic governance exist. The operator reviews, edits, and decides what settles into the corpus.
+
+The method does not require trusting the AI. It requires the operator to remain the final arbiter.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">10. Can I use this with a team? //</div>
+        <div class="faq-answer">yes -- everyone in the team must follow a common set of rules. It's still teamwork. The first question then is designing the rules.
+
+the medium is collaborative. A shared framework of rules means multi-operator corpora are possible in principle, but the protocol does not optimize for collaboration. It optimizes for individual long-term reasoning and means of communicating it.
+
+If the method spreads through a team -- each member maintaining their own corpus, with shared artifacts as points of exchange -- that is distribution, not a product feature. The governance model assumes one human with termination authority over one corpus.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">11. Is this open source? //</div>
+        <div class="faq-answer">The protocol specifications are open. The operator's content is not.
+
+Protocol documents -- the rules, the structural obligations, the design language -- are published under CC-BY. Anyone can adopt, adapt, or build on them.
+
+The operator's artifacts -- the notes, the writing, the knowledge created using the protocol -- remain copyrighted to the operator and private. The protocol does not claim ownership over what the operator produces.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">12. Do I have to understand the philosophy? //</div>
+        <div class="faq-answer">It helps if you want to build variations, but:
+
+The protocol can be used without engaging the philosophical layer. Follow the formatting rules, write structured notes, run transformations. The system works.
+
+Understanding why the rules exist -- the epistemology, the computational limits, the governance model -- allows the operator to extend or modify the protocol for domain-specific needs. But it is not required for basic operation.</div>
+      </div>
+      
+    </div>
+  </section>
 </body>
 </html>
