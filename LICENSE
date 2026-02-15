@@ -1,1 +1,20 @@
-Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). Attribution: Mikhail Shakhnazarov, Berlin, February 2026. For the full license text, see https://creativecommons.org/licenses/by/4.0/legalcode. This license applies to the protocol specification documents in this repository. Artifacts, implementations, or works produced using this protocol are not automatically covered by this license and may be licensed separately at the discretion of their creators.
+The Earmark Open Intelligence Protocol is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). This means the protocol is free for anyone to use, share, and modify, even for commercial purposes, provided specific conditions are met.
+
+The requirements for using or modifying the protocol include:
+
+Attribution (BY): Credit must be given to the author, Mikhail Shakhnazarov. This credit should be provided in a reasonable manner and include a link to the original work and the license.
+
+ShareAlike (SA): If the protocol is remixed, transformed, or built upon, the resulting contributions must be distributed under the same license as the original.
+
+Indicate Changes: If any modifications are made to the original text, this must be clearly indicated.
+
+No Additional Restrictions: No legal terms or technological measures may be applied that would legally restrict others from doing anything the license permits.
+
+A standard way to provide this attribution is by using the "TASL" method:
+
+Title: Earmark Open Intelligence Protocol
+Author: Mikhail Shakhnazarov
+Source: https://github.com/Mikhail-Shakhnazarov/earmark-open-intelligence-protocol
+License: CC BY-SA 4.0
+
+It is important to note that while the protocol documents themselves are governed by this license, any content produced by an operator using the protocol (such as personal notes or internal project records) remains the property of that operator and can be licensed however they choose.

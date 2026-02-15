@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -13,17 +14,17 @@
       --accent: #E06030;
       --frame-width: 720px;
     }
-    
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     html {
       scroll-behavior: smooth;
     }
-    
+
     body {
       background: var(--paper);
       color: var(--ink);
@@ -33,7 +34,7 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
-    
+
     /* Header with logo */
     .site-header {
       position: fixed;
@@ -45,12 +46,12 @@
       border-bottom: 0.5px solid var(--rule);
       padding: 24px 32px;
     }
-    
+
     .logo-lockup {
       max-width: var(--frame-width);
       margin: 0 auto;
     }
-    
+
     .logo-title {
       font-family: "Arial Narrow", "Liberation Sans Narrow", Arial, sans-serif;
       font-weight: 700;
@@ -61,7 +62,7 @@
       line-height: 1;
       margin-bottom: 4px;
     }
-    
+
     .logo-subtitle {
       font-family: "Liberation Mono", "Courier New", monospace;
       font-size: 8px;
@@ -70,23 +71,26 @@
       color: var(--mid);
       line-height: 1;
     }
-    
+
     /* Hero section */
     .hero {
       min-height: 70vh;
       display: flex;
       align-items: center;
-      justify-content: flex-start; /* was: center */
+      justify-content: flex-start;
+      /* was: center */
       padding: 140px 32px 80px;
     }
-    
+
     .hero-content {
       max-width: var(--frame-width);
       width: 100%;
-      text-align: left;            /* was: center */
-      margin: 0 auto;              /* keeps same left edge as other sections */
+      text-align: left;
+      /* was: center */
+      margin: 0 auto;
+      /* keeps same left edge as other sections */
     }
-    
+
     .hero-status {
       font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
       font-weight: 600;
@@ -96,11 +100,11 @@
       color: var(--ink);
       margin-bottom: 16px;
     }
-    
+
     .hero-status .accent {
       color: var(--accent);
     }
-    
+
     .hero-links {
       margin-top: 48px;
       font-family: "Arial Narrow", Arial, sans-serif;
@@ -108,103 +112,107 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
       font-size: 13px;
-      text-align: left; /* optional, ensures nav doesn't feel centered */
+      text-align: left;
+      /* optional, ensures nav doesn't feel centered */
     }
-    
+
     .hero-links a {
       color: var(--mid);
       text-decoration: none;
       transition: color 0.2s;
     }
-    
+
     .hero-links a:hover {
       color: var(--ink);
     }
-    
+
     .link-sep {
       color: var(--accent);
       padding: 0 12px;
       user-select: none;
     }
-    
+
     /* FAQ Section */
     .faq-section {
       padding: 80px 32px 120px;
       border-top: 0.5px solid var(--rule);
     }
-    
+
     .faq-container {
       max-width: var(--frame-width);
       margin: 0 auto;
     }
-    
+
     .section-header {
       margin-bottom: 60px;
       padding-top: 8px;
       border-top: 0.5px solid var(--accent);
     }
-    
+
     .section-header-text {
       font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
       font-weight: 600;
-      font-size: 20px;   /* was: 18px */
+      font-size: 20px;
+      /* was: 18px */
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--ink);
       margin-top: 16px;
     }
-    
+
     .section-header-text .index {
       color: var(--accent);
       margin-left: 8px;
     }
-    
+
     .faq-item {
       margin-bottom: 48px;
     }
-    
+
     .faq-question {
       font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
       font-weight: 600;
-      font-size: 14px;   /* was: 13px */
+      font-size: 14px;
+      /* was: 13px */
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--ink);
       margin-bottom: 16px;
       line-height: 1.4;
     }
-    
+
     .faq-question .num {
       color: var(--accent);
       margin-right: 8px;
     }
-    
+
     .faq-answer {
       color: var(--ink);
       text-align: left;
       line-height: 1.75;
-      font-size: 15px;   /* added: larger body text in FAQ */
+      font-size: 15px;
+      /* added: larger body text in FAQ */
     }
-    
+
     .faq-answer p {
       margin-bottom: 16px;
     }
-    
+
     .faq-answer p:last-child {
       margin-bottom: 0;
     }
-    
+
     .faq-answer strong {
       font-weight: 700;
       color: var(--ink);
     }
-    
+
     /* Footer */
     .site-footer {
       border-top: 0.5px solid var(--rule);
       padding: 32px;
     }
-    
+
     .footer-content {
       max-width: var(--frame-width);
       margin: 0 auto;
@@ -215,72 +223,76 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
-    
+
     .footer-left {
       color: var(--mid);
     }
-    
+
     .footer-right {
       color: var(--accent);
     }
-    
+
     /* Responsive */
     @media (max-width: 768px) {
       .site-header {
         padding: 20px 24px;
       }
-      
+
       .logo-title {
         font-size: 18px;
       }
-      
+
       .hero {
         min-height: 60vh;
         padding: 120px 24px 60px;
       }
-      
+
       .hero-status {
         font-size: 24px;
       }
-      
+
       .hero-links {
         font-size: 12px;
       }
-      
+
       .link-sep {
         padding: 0 8px;
       }
-      
+
       .faq-section {
         padding: 60px 24px 80px;
       }
-      
+
       .section-header {
         margin-bottom: 40px;
       }
-      
+
       .section-header-text {
-        font-size: 18px;  /* was: 16px */
+        font-size: 18px;
+        /* was: 16px */
       }
-      
+
       .faq-question {
-        font-size: 13px;  /* was: 12px */
+        font-size: 13px;
+        /* was: 12px */
       }
-      
+
       .faq-answer {
-        font-size: 14px;  /* was: 13px */
+        font-size: 14px;
+        /* was: 13px */
       }
-      
+
       .site-footer {
         padding: 24px;
       }
-      
+
       .footer-content {
         font-size: 10px;
       }
     }
   </style>
 </head>
+
 <body>
   <!-- Fixed header with logo -->
   <header class="site-header">
@@ -289,30 +301,26 @@
       <div class="logo-subtitle">MACHINES FOR THINKING</div>
     </div>
   </header>
-  
+
   <!-- Hero section -->
   <section class="hero">
     <div class="hero-content">
       <h1 class="hero-status">
         FINAL CHECKS <span class="accent">//</span>
       </h1>
-      
+
       <nav class="hero-links">
-        <a href="https://github.com/Mikhail-Shakhnazarov/earmark-open-intelligence-protocol" 
-           target="_blank" 
-           rel="noopener noreferrer">REPO</a>
+        <a href="https://github.com/Mikhail-Shakhnazarov/earmark-open-intelligence-protocol" target="_blank"
+          rel="noopener noreferrer">REPO</a>
         <span class="link-sep">//</span>
-        <a href="https://notebooklm.google.com/notebook/4b99602f-51da-4b6f-b8cb-47c5b7217731" 
-           target="_blank" 
-           rel="noopener noreferrer">NOTEBOOK</a>
+        <a href="https://notebooklm.google.com/notebook/cc5da9da-ba15-43e4-bc03-db6f9f818d58" target="_blank"
+          rel="noopener noreferrer">NOTEBOOK</a>
         <span class="link-sep">//</span>
-        <a href="https://patreon.com/earmark" 
-           target="_blank" 
-           rel="noopener noreferrer">PATREON</a>
+        <a href="https://patreon.com/earmark" target="_blank" rel="noopener noreferrer">PATREON</a>
       </nav>
     </div>
   </section>
-  
+
   <!-- FAQ Section -->
   <section class="faq-section" id="faq">
     <div class="faq-container">
@@ -321,162 +329,205 @@
           FREQUENTLY ASKED QUESTIONS <span class="index">// 00</span>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">0.</span> WHAT IS THIS?</div>
         <div class="faq-answer">
           <p>it depends on what you see.</p>
-          
-          <p><strong>it's text about text:</strong> this project can be confusing at first because it's circular - it's a text-based project about how text operates, but once we move past that:</p>
-          
+
+          <p><strong>it's text about text:</strong> this project can be confusing at first because it's circular - it's
+            a text-based project about how text operates, but once we move past that:</p>
+
           <p><strong>augmented intelligence:</strong> A thinker can think better. A planner can plan better.</p>
-          
-          <p><strong>a new medium for human communication:</strong> the author uses a variation of this system to produce most written artifacts and publications. The texts can then be loaded into an LLM runtime. That runtime can be used to explain the text.</p>
-          
-          <p><strong>a new medium for human collaboration:</strong> augmented thinking scales laterally and in parallel, not vertically. The protocol does not dictate the rules of any community of practice -- it simply outlines why rules are necessary. One can vote on the rules or agree to a shared framework of rules.</p>
-          
-          <p><strong>a move away from disposable knowledge and slop.</strong> High quality text takes work, not a bigger GPU.</p>
-          
-          <p><strong>it is just writing.</strong> At its simplest level, Earmark is a set of rules for writing and organizing notes so that an LLM can help the operator think without "forgetting" or "drifting" over time.</p>
-          
-          <p><strong>a literacy for the AI age</strong> -- a disciplined way of taking notes that ensures AI-assisted thinking stays reliable, verifiable, and permanent.</p>
+
+          <p><strong>a new medium for human communication:</strong> the author uses a variation of this system to
+            produce most written artifacts and publications. The texts can then be loaded into an LLM runtime. That
+            runtime can be used to explain the text.</p>
+
+          <p><strong>a new medium for human collaboration:</strong> augmented thinking scales laterally and in parallel,
+            not vertically. The protocol does not dictate the rules of any community of practice -- it simply outlines
+            why rules are necessary. One can vote on the rules or agree to a shared framework of rules.</p>
+
+          <p><strong>a move away from disposable knowledge and slop.</strong> High quality text takes work, not a bigger
+            GPU.</p>
+
+          <p><strong>it is just writing.</strong> At its simplest level, Earmark is a set of rules for writing and
+            organizing notes so that an LLM can help the operator think without "forgetting" or "drifting" over time.
+          </p>
+
+          <p><strong>a literacy for the AI age</strong> -- a disciplined way of taking notes that ensures AI-assisted
+            thinking stays reliable, verifiable, and permanent.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">1.</span> IS THIS AN AI PRODUCT?</div>
         <div class="faq-answer">
           <p>No.</p>
-          
-          <p>Earmark is not an assistant. Not an agent. Not a tool. It is a protocol — a method for writing that makes human thought portable <strong>across</strong> LLM runtimes.</p>
-          
-          <p>The AI does not "do" the thinking. The AI executes transformations on structured text according to rules the text describes. The intelligence lives in the artifacts the operator creates, not in the model.</p>
-          
+
+          <p>Earmark is not an assistant. Not an agent. Not a tool. It is a protocol — a method for writing that makes
+            human thought portable <strong>across</strong> LLM runtimes.</p>
+
+          <p>The AI does not "do" the thinking. The AI executes transformations on structured text according to rules
+            the text describes. The intelligence lives in the artifacts the operator creates, not in the model.</p>
+
           <p>Think of it as a filing system that an LLM can read, not an LLM that reads for the operator.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">2.</span> IS THIS ART OR IS THIS TECH?</div>
         <div class="faq-answer">
           <p>Yes.</p>
-          
-          <p>The question assumes a boundary that does not hold here. Earmark resists familiar categories because it operates as a medium -- something that enables expression and thought rather than something that produces a predetermined output.</p>
-          
-          <p>One can use it to think. One can use it to publish. One can use it to build tools. The protocol does not prescribe which.</p>
+
+          <p>The question assumes a boundary that does not hold here. Earmark resists familiar categories because it
+            operates as a medium -- something that enables expression and thought rather than something that produces a
+            predetermined output.</p>
+
+          <p>One can use it to think. One can use it to publish. One can use it to build tools. The protocol does not
+            prescribe which.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">3.</span> WHY SHOULD I CARE?</div>
         <div class="faq-answer">
           <p>AI must remain transparent. The rules it executes must be public.</p>
-          
-          <p>This project is proof by demonstration that the "intelligence" in AI is simply governance and bureaucracy — the same sense of intelligence as in intelligence work or spy-craft. It is information processing.</p>
-          
-          <p>If you wants AI output that is reliable, verifiable, social, and accumulative -- not disposable, not vendor-locked, not subject to model drift -- then structured governance becomes a functional necessity.</p>
+
+          <p>This project is proof by demonstration that the "intelligence" in AI is simply governance and bureaucracy —
+            the same sense of intelligence as in intelligence work or spy-craft. It is information processing.</p>
+
+          <p>If you wants AI output that is reliable, verifiable, social, and accumulative -- not disposable, not
+            vendor-locked, not subject to model drift -- then structured governance becomes a functional necessity.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">4.</span> WHAT LLM DOES IT USE?</div>
         <div class="faq-answer">
           <p>Whichever one the operator chooses.</p>
-          
-          <p>The LLM vendor is a commodity runtime. The intelligence lives in the artifacts -- the structured text the operator writes. Earmark artifacts are portable across Claude, GPT, Gemini, or any future model capable of reading instructions.</p>
-          
-          <p>This is not a product tied to a specific vendor. It is a method that survives vendor changes, price changes, and model deprecations.</p>
+
+          <p>The LLM vendor is a commodity runtime. The intelligence lives in the artifacts -- the structured text the
+            operator writes. Earmark artifacts are portable across Claude, GPT, Gemini, or any future model capable of
+            reading instructions.</p>
+
+          <p>This is not a product tied to a specific vendor. It is a method that survives vendor changes, price
+            changes, and model deprecations.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">5.</span> WHO IS THIS FOR?</div>
         <div class="faq-answer">
           <p>it's not for everyone, but anyone can use it.</p>
-          
-          <p>Earmark is operator-gated, not access-gated. It is designed for someone who already thinks in structured text -- or wants to. High agency. Time-scarce. Allergic to tool lock-in. Comfortable with the constraint that clarity requires discipline.</p>
+
+          <p>Earmark is operator-gated, not access-gated. It is designed for someone who already thinks in structured
+            text -- or wants to. High agency. Time-scarce. Allergic to tool lock-in. Comfortable with the constraint
+            that clarity requires discipline.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">6.</span> DO I HAVE TO FOLLOW THE RULES?</div>
         <div class="faq-answer">
           <p>no.</p>
-          
-          <p>The protocol simply explains its own rules, making itself transparent. It also shows why rules are necessary.</p>
-          
-          <p>If the operator chooses to use the protocol -- because reliability, verifiability, and portability matter -- then following rules and communicating what those rules are becomes a functional necessity. But the protocol does not enforce compliance. It explains itself and lets the operator decide.</p>
+
+          <p>The protocol simply explains its own rules, making itself transparent. It also shows why rules are
+            necessary.</p>
+
+          <p>If the operator chooses to use the protocol -- because reliability, verifiability, and portability matter
+            -- then following rules and communicating what those rules are becomes a functional necessity. But the
+            protocol does not enforce compliance. It explains itself and lets the operator decide.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">7.</span> WHAT DO I NEED TO USE THIS?</div>
         <div class="faq-answer">
           <p>Literacy and a willingness to maintain structured text.</p>
-          
-          <p>No specialized technical or philosophical knowledge is required. No software beyond a text editor and access to an LLM. No subscription. No installation.</p>
-          
-          <p>The skill floor is: can the operator write clearly, organize notes hierarchically, and follow formatting conventions? If yes, the protocol is accessible.</p>
+
+          <p>No specialized technical or philosophical knowledge is required. No software beyond a text editor and
+            access to an LLM. No subscription. No installation.</p>
+
+          <p>The skill floor is: can the operator write clearly, organize notes hierarchically, and follow formatting
+            conventions? If yes, the protocol is accessible.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">8.</span> WHAT HAPPENS TO MY DATA? WHO OWNS IT?</div>
         <div class="faq-answer">
           <p>earmark does not collect, store, or access data. It is a method, not a service.</p>
-          
-          <p>your data is your data. This project is a framework on working with data and and a demonstration of how you can build your own.</p>
-          
-          <p>No subscription. No retained dependency. No vendor lock-in. The protocol specifications are published under Creative Commons Attribution (CC-BY). The operator's authored content -- the artifacts, the notes, the knowledge -- remains copyrighted to the operator.</p>
+
+          <p>your data is your data. This project is a framework on working with data and and a demonstration of how you
+            can build your own.</p>
+
+          <p>No subscription. No retained dependency. No vendor lock-in. The protocol specifications are published under
+            Creative Commons Attribution (CC-BY). The operator's authored content -- the artifacts, the notes, the
+            knowledge -- remains copyrighted to the operator.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">9.</span> WHAT IF THE AI GETS SOMETHING WRONG?</div>
         <div class="faq-answer">
-          <p>an LLM is a governed combinatorial engine. The LLM executing against a corpus is still a combinatorial engine. The operator corrects, rejects, or reframes. It's just writing.</p>
-          
-          <p>Outputs are drafts, not authority. The protocol assumes the LLM will make mistakes -- that is why verification schemes, intrinsic signage, and epistemic governance exist. The operator reviews, edits, and decides what settles into the corpus.</p>
-          
+          <p>an LLM is a governed combinatorial engine. The LLM executing against a corpus is still a combinatorial
+            engine. The operator corrects, rejects, or reframes. It's just writing.</p>
+
+          <p>Outputs are drafts, not authority. The protocol assumes the LLM will make mistakes -- that is why
+            verification schemes, intrinsic signage, and epistemic governance exist. The operator reviews, edits, and
+            decides what settles into the corpus.</p>
+
           <p>The method does not require trusting the AI. It requires the operator to remain the final arbiter.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">10.</span> CAN I USE THIS WITH A TEAM?</div>
         <div class="faq-answer">
-          <p>yes -- everyone in the team must follow a common set of rules. It's still teamwork. The first question then is designing the rules.</p>
-          
-          <p>the medium is collaborative. A shared framework of rules means multi-operator corpora are possible in principle, but the protocol does not optimize for collaboration. It optimizes for individual long-term reasoning and means of communicating it.</p>
-          
-          <p>If the method spreads through a team -- each member maintaining their own corpus, with shared artifacts as points of exchange -- that is distribution, not a product feature. The governance model assumes one human with termination authority over one corpus.</p>
+          <p>yes -- everyone in the team must follow a common set of rules. It's still teamwork. The first question then
+            is designing the rules.</p>
+
+          <p>the medium is collaborative. A shared framework of rules means multi-operator corpora are possible in
+            principle, but the protocol does not optimize for collaboration. It optimizes for individual long-term
+            reasoning and means of communicating it.</p>
+
+          <p>If the method spreads through a team -- each member maintaining their own corpus, with shared artifacts as
+            points of exchange -- that is distribution, not a product feature. The governance model assumes one human
+            with termination authority over one corpus.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">11.</span> IS THIS OPEN SOURCE?</div>
         <div class="faq-answer">
           <p>The protocol specifications are open. The operator's content is not.</p>
-          
-          <p>Protocol documents -- the rules, the structural obligations, the design language -- are published under CC-BY. Anyone can adopt, adapt, or build on them.</p>
-          
-          <p>The operator's artifacts -- the notes, the writing, the knowledge created using the protocol -- remain copyrighted to the operator and private. The protocol does not claim ownership over what the operator produces.</p>
+
+          <p>Protocol documents -- the rules, the structural obligations, the design language -- are published under
+            CC-BY. Anyone can adopt, adapt, or build on them.</p>
+
+          <p>The operator's artifacts -- the notes, the writing, the knowledge created using the protocol -- remain
+            copyrighted to the operator and private. The protocol does not claim ownership over what the operator
+            produces.</p>
         </div>
       </div>
-      
+
       <div class="faq-item">
         <div class="faq-question"><span class="num">12.</span> DO I HAVE TO UNDERSTAND THE PHILOSOPHY?</div>
         <div class="faq-answer">
           <p>It helps if you want to build variations, but:</p>
-          
-          <p>The protocol can be used without engaging the philosophical layer. Follow the formatting rules, write structured notes, run transformations. The system works.</p>
-          
-          <p>Understanding why the rules exist -- the epistemology, the computational limits, the governance model -- allows the operator to extend or modify the protocol for domain-specific needs. But it is not required for basic operation.</p>
+
+          <p>The protocol can be used without engaging the philosophical layer. Follow the formatting rules, write
+            structured notes, run transformations. The system works.</p>
+
+          <p>Understanding why the rules exist -- the epistemology, the computational limits, the governance model --
+            allows the operator to extend or modify the protocol for domain-specific needs. But it is not required for
+            basic operation.</p>
         </div>
       </div>
     </div>
   </section>
-  
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
@@ -485,4 +536,5 @@
     </div>
   </footer>
 </body>
+
 </html>
