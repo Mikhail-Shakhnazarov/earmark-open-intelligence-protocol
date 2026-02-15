@@ -9,11 +9,12 @@
 - AUTHOR: MIKHAIL SHAKHNAZAROV
 - BERLIN, FEBRUARY 2026
 - LICENSE: CC BY-SA 4.0
+- TRADEMARKS: SEE README.md#TRADEMARKS
 - https://creativecommons.org/licenses/by-sa/4.0/
 
 ## THE GEOMETRIC FRAMING // 01
 
-The system is geometric: artifacts are points in a constrained space, not items in a single workflow. A small coordinate system makes constraints explicit and composable. Coordinates are routing metadata — they decide which template applies, what evidence is required, what tone is permitted, what can be imported, and what acceptance test closes the loop. Declare coordinates at the top of durable artifacts, explicitly; this reduces argument about what kind of thing an artifact is and prevents category collapse (treating a draft as a binding spec, or an internal note as an external communication).
+The system is geometric: artifacts are points in a constrained space, not items in a single workflow. A small coordinate system makes constraints explicit and composable. Coordinates are routing metadata -- they decide which template applies, what evidence is required, what tone is permitted, what can be imported, and what acceptance test closes the loop. Declare coordinates at the top of durable artifacts, explicitly; this reduces argument about what kind of thing an artifact is and prevents category collapse (treating a draft as a binding spec, or an internal note as an external communication).
 
 ## THE AXES // 02
 
@@ -27,7 +28,7 @@ The system is geometric: artifacts are points in a constrained space, not items 
 
 **Time horizon** sets maintenance obligations: ephemeral (single-use), session-scoped (persists for the duration of a work session), or durable (survives across sessions, model changes, and context loss). Durable artifacts require signage.
 
-**Governance cost** calibrates process overhead: untyped (no governance — raw captures, scratch notes), lightly typed (templates without formal verification), or strongly typed (full coordinate declaration, verification, and signage). The axis prevents over-governance of low-stakes material and under-governance of high-stakes material.
+**Governance cost** calibrates process overhead: untyped (no governance -- raw captures, scratch notes), lightly typed (templates without formal verification), or strongly typed (full coordinate declaration, verification, and signage). The axis prevents over-governance of low-stakes material and under-governance of high-stakes material.
 
 ## SECOND-ORDER MODIFICATION // 03
 
@@ -37,4 +38,4 @@ The coordinate system is itself subject to modification through second-order wri
 
 A decision record with traceable trade-offs might declare: Authority=spec; Audience=internal; Verification=evidence-bound; Context=corpus plus cited sources; Time horizon=durable; Governance=strongly typed. These coordinates route the artifact to the appropriate template, require claims to trace to sources, mandate signage for long-term integrity, and ensure changes require the full governance process.
 
-CC BY-SA 4.0 — Mikhail Shakhnazarov, Berlin, February 2026
+CC BY-SA 4.0 -- Mikhail Shakhnazarov, Berlin, February 2026

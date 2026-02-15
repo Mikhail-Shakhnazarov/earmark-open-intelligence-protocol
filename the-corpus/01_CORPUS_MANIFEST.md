@@ -9,13 +9,19 @@
 - AUTHOR: MIKHAIL SHAKHNAZAROV
 - BERLIN, FEBRUARY 2026
 - LICENSE: CC BY-SA 4.0
+- TRADEMARKS: SEE README.md#TRADEMARKS
 - https://creativecommons.org/licenses/by-sa/4.0/
 
 ## LICENSE // 01
 
 This corpus is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). Any person may copy, redistribute, remix, transform, and build upon this material for any purpose, including commercial use, provided that appropriate credit is given, a link to the license is provided, indication is made if changes were applied, and derivative works are distributed under the same or a compatible license. No additional restrictions may be imposed. Attribution: Mikhail Shakhnazarov, Berlin, February 2026. Full license text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
-This license covers the protocol specification documents listed below. Content produced using the protocol — operator-authored artifacts governed by these conventions — is not covered and may carry whatever license the producing operator chooses. The protocol enables sovereignty; the protocol itself is sovereign to no one.
+Trademark notice: This corpus is licensed under CC BY-SA 4.0 for the protocol text. The license does not grant any rights in the trademark EARMARK MACHINES FOR THINKING. EARMARK MACHINES FOR THINKING is a trademark (TM) of Mikhail Shakhnazarov. Nominative reference is permitted (e.g., "compatible with the Earmark Open Intelligence Protocol") provided it does not imply sponsorship, endorsement, or an official relationship.
+
+Crypto/tokens boundary: This project will never issue, sell, or promote a cryptocurrency or token. Blockchain may be explored only as an infrastructure primitive (e.g., integrity, provenance, distributed coordination), not as a financial product.
+
+Scope: This license applies to the protocol specification documents listed in this corpus. Content produced by an operator using the protocol is not covered and may be licensed separately by that operator.
+
 
 ## CORPUS INDEX // 02
 
@@ -40,4 +46,4 @@ Version 1.0, February 2026. The protocol is maintained as a governed corpus: cha
 
 The protocol governs the structure, verification, and governance of text artifacts produced through language model runtimes; it does not govern content. It provides conventions for portability, integrity, and epistemic transparency without providing opinions, recommendations, or domain-specific knowledge. The protocol is a specification that any competent runtime can implement. Vendor independence is a design requirement.
 
-CC BY-SA 4.0 — Mikhail Shakhnazarov, Berlin, February 2026
+CC BY-SA 4.0 -- Mikhail Shakhnazarov, Berlin, February 2026

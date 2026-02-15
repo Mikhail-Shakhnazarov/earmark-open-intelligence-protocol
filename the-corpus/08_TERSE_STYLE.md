@@ -9,15 +9,16 @@
 - AUTHOR: MIKHAIL SHAKHNAZAROV
 - BERLIN, FEBRUARY 2026
 - LICENSE: CC BY-SA 4.0
+- TRADEMARKS: SEE README.md#TRADEMARKS
 - https://creativecommons.org/licenses/by-sa/4.0/
 
 ## THE PROSE DEFAULT // 01
 
-Prose is the system's first language. Information structure is expressed within sentences — through subordination, coordination, reference, and punctuation — rather than externalized into formatting. What makes the style terse is not shortness but density: information per token relative to structural overhead; many tokens do double duty, carrying semantic content while encoding relation (contrast, causality, modification, reference). The underlying bet is dual-audience robustness: human readers and language models both exploit regularities in natural language to recover hierarchy and linkage (clause boundaries, discourse markers, parallel forms, subordination); clearer grammatical structure usually helps both audiences.
+Prose is the system's first language. Information structure is expressed within sentences -- through subordination, coordination, reference, and punctuation -- rather than externalized into formatting. What makes the style terse is not shortness but density: information per token relative to structural overhead; many tokens do double duty, carrying semantic content while encoding relation (contrast, causality, modification, reference). The underlying bet is dual-audience robustness: human readers and language models both exploit regularities in natural language to recover hierarchy and linkage (clause boundaries, discourse markers, parallel forms, subordination); clearer grammatical structure usually helps both audiences.
 
 ## PUNCTUATION AS CONTROL // 02
 
-Punctuation supplies lightweight control: a colon signals "what follows elaborates what came before"; semicolons mark coordinate alternatives; subordinate conjunctions ("when," "which," "because") embed scope hierarchically inside the sentence without indentation. The result is a paragraph that contains its own map — relationships expressed as ordinary language relations, not external formatting.
+Punctuation supplies lightweight control: a colon signals "what follows elaborates what came before"; semicolons mark coordinate alternatives; subordinate conjunctions ("when," "which," "because") embed scope hierarchically inside the sentence without indentation. The result is a paragraph that contains its own map -- relationships expressed as ordinary language relations, not external formatting.
 
 ## DENSITY OVER BREVITY // 03
 
@@ -49,4 +50,4 @@ Prefer in-language structure (subordination, coordination, punctuation) over ext
 
 These rules serve double duty as the dial inventory for intrinsic signage. Maintain grammatical parallelism within enumerations. Preserve subordination depth consistency within sections. Keep demonstrative chains unbroken across paragraph boundaries. Use consistent punctuation semantics throughout the text (colons always elaborate, semicolons always coordinate).
 
-CC BY-SA 4.0 — Mikhail Shakhnazarov, Berlin, February 2026
+CC BY-SA 4.0 -- Mikhail Shakhnazarov, Berlin, February 2026
