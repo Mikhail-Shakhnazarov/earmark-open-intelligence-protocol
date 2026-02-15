@@ -57,7 +57,7 @@ This work is licensed under **Creative Commons Attribution-ShareAlike 4.0 Intern
 
 **Attribution:** Mikhail Shakhnazarov, Berlin, February 2026
 
-For full legal details, see [LICENSE](https://www.google.com/search?q=./LICENSE) or [01_CORPUS_MANIFEST.md](https://www.google.com/search?q=./01_CORPUS_MANIFEST.md).
+For full legal details, LICENSE or 01_CORPUS_MANIFEST.md
 
 **Scope:** This license applies to the protocol specification documents themselves. Content produced using the protocol — operator-authored artifacts governed by these conventions — is not covered and may carry whatever license the producing operator chooses.
 
