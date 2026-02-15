@@ -76,13 +76,15 @@
       min-height: 70vh;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start; /* was: center */
       padding: 140px 32px 80px;
     }
     
     .hero-content {
       max-width: var(--frame-width);
-      text-align: center;
+      width: 100%;
+      text-align: left;            /* was: center */
+      margin: 0 auto;              /* keeps same left edge as other sections */
     }
     
     .hero-status {
@@ -106,6 +108,7 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
       font-size: 13px;
+      text-align: left; /* optional, ensures nav doesn't feel centered */
     }
     
     .hero-links a {
@@ -144,7 +147,7 @@
     .section-header-text {
       font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
       font-weight: 600;
-      font-size: 18px;
+      font-size: 20px;   /* was: 18px */
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--ink);
@@ -163,7 +166,7 @@
     .faq-question {
       font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
       font-weight: 600;
-      font-size: 13px;
+      font-size: 14px;   /* was: 13px */
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--ink);
@@ -179,7 +182,8 @@
     .faq-answer {
       color: var(--ink);
       text-align: left;
-      line-height: 1.7;
+      line-height: 1.75;
+      font-size: 15px;   /* added: larger body text in FAQ */
     }
     
     .faq-answer p {
@@ -256,15 +260,15 @@
       }
       
       .section-header-text {
-        font-size: 16px;
+        font-size: 18px;  /* was: 16px */
       }
       
       .faq-question {
-        font-size: 12px;
+        font-size: 13px;  /* was: 12px */
       }
       
       .faq-answer {
-        font-size: 13px;
+        font-size: 14px;  /* was: 13px */
       }
       
       .site-footer {
