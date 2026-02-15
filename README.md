@@ -1,4 +1,6 @@
-The provided README has been updated to align with the specific filenames, structural terminology, and license requirements found in the uploaded corpus (CC BY-SA 4.0).
+
+**YOU CAN READ THIS AS AN ARG,**
+**but you don't have to**
 
 ---
 
@@ -10,10 +12,13 @@ The provided README has been updated to align with the specific filenames, struc
 
 This project is built **for collaboration**. The Open Intelligence Protocol is an open, evolving framework -- dive in, contribute, and help shape how we think about machine-intelligible systems. This is not a commercial product. It is a public demonstration of a practice that can be offered commercially. The ideas described here cannot be copyrighted; the specification text itself is licensed under **CC BY-SA 4.0**.
 
-**Author's suggestion for human readers:** - **00** explains the thinking (**THE INTELLIGENCE IS LANGUAGE**)
+**Author's suggestion for human readers:**
 
-* **01** explains the structure (**CORPUS MANIFEST**)
-* **02** explains the protocol (**PROTOCOL INTRODUCTION**)
+The language is dense, terse and obtuse because this protocol is written in the language it defines (it's a text about text that explains, how it works). For opzimal experience, load it into an LLM and have the LLM interpret :)
+
+**00** **THE INTELLIGENCE IS LANGUAGE** explains the thinking
+**01** **CORPUS MANIFEST** explains the structure
+**02** **PROTOCOL INTRODUCTION** explains the protocol
 
 After that, if you want to experience it differently, load the complete corpus into NotebookLM or a similar tool and let the system analyze its own logic. You'll see how the protocol becomes a lens through which the lens itself can be understood. It's meta, and it works. Let the chatbot explain it. Ask questions. Be maximally curious if you want to. This is version 1 -- a proof by demonstration.
 
