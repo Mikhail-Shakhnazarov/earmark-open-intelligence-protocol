@@ -7,12 +7,31 @@
   <title>EARMARK — Machines for Thinking</title>
   <style>
     :root {
-      --paper: #1C1B1A;
-      --ink: #E8E4DF;
-      --mid: #9A958E;
-      --rule: #3A3835;
-      --accent: #E06030;
-      --frame-width: 720px;
+      --frame-width: 72ch;
+      --frame-pad: clamp(16px, 4vw, 48px);
+
+      --unit: 8px;
+      --rule: 0.5px;
+
+      --fs-body: 15px;
+      --lh: 1.7;
+      --gap-p: calc(var(--unit) * 2);
+
+      --fs-meta: 11px;
+      --fs-lockup-1: 22px;
+      --fs-lockup-2: 8px;
+
+      --c-bg: #1C1B1A;
+      --c-fg: #E8E4DF;
+      --c-muted: #9A958E;
+      --c-rule: #3A3835;
+      --c-accent: #E06030;
+
+      /* Back-compat aliases */
+      --paper: var(--c-bg);
+      --ink: var(--c-fg);
+      --mid: var(--c-muted);
+      --accent: var(--c-accent);
     }
 
     * {
@@ -26,34 +45,46 @@
     }
 
     body {
-      background: var(--paper);
-      color: var(--ink);
+      background: var(--c-bg);
+      color: var(--c-fg);
       font-family: "JetBrains Mono", "Liberation Mono", "Courier New", monospace;
-      font-size: 14px;
-      line-height: 1.7;
+      font-size: var(--fs-body);
+      line-height: var(--lh);
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
+    p {
+      margin: 0;
+    }
+
+    p+p {
+      margin-top: var(--gap-p);
+    }
+
+    .frame {
+      max-width: var(--frame-width);
+      margin-inline: auto;
+      padding-inline: var(--frame-pad);
+    }
+
     /* Header with logo */
     .site-header {
-      position: fixed;
+      position: sticky;
       top: 0;
       left: 0;
       right: 0;
       z-index: 100;
-      background: var(--paper);
-      border-bottom: 0.5px solid var(--rule);
-      padding: 24px 32px;
+      background: var(--c-bg);
+      border-bottom: var(--rule) solid var(--c-rule);
+      padding-block: calc(var(--unit) * 3);
     }
 
     .header-inner {
-      max-width: var(--frame-width);
-      margin: 0 auto;
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
-      gap: 24px;
+      gap: calc(var(--unit) * 3);
     }
 
     .logo-lockup {
@@ -63,20 +94,20 @@
     .logo-title {
       font-family: "Arial Narrow", "Liberation Sans Narrow", Arial, sans-serif;
       font-weight: 700;
-      font-size: 22px;
+      font-size: var(--fs-lockup-1);
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      color: var(--ink);
+      color: var(--c-fg);
       line-height: 1;
-      margin-bottom: 4px;
+      margin-bottom: calc(var(--unit) / 2);
     }
 
     .logo-subtitle {
       font-family: "Liberation Mono", "Courier New", monospace;
-      font-size: 8px;
+      font-size: var(--fs-lockup-2);
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--mid);
+      color: var(--c-muted);
       line-height: 1;
     }
 
@@ -91,45 +122,42 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      font-size: 13px;
+      font-size: var(--fs-meta);
       text-align: right;
     }
 
     .header-links a {
-      color: var(--mid);
+      color: var(--c-muted);
       text-decoration: none;
       transition: color 0.2s;
       white-space: nowrap;
+      display: inline-flex;
+      align-items: baseline;
     }
 
-    .header-links a + a::before {
+    .header-links a:not(:last-child)::after {
       content: "//";
-      color: var(--accent);
-      padding: 0 12px;
+      color: var(--c-accent);
+      padding: 0 calc(var(--unit) * 1.5);
       letter-spacing: 0;
     }
 
     .header-links a:hover {
-      color: var(--ink);
+      color: var(--c-fg);
     }
 
     /* Hero section */
     .hero {
-      min-height: 70vh;
+      min-height: 40vh;
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      /* was: center */
-      padding: 140px 32px 80px;
+      padding-block: calc(var(--unit) * 6);
     }
 
     .hero-content {
-      max-width: var(--frame-width);
       width: 100%;
       text-align: left;
-      /* was: center */
-      margin: 0 auto;
-      /* keeps same left edge as other sections */
     }
 
     .hero-status {
@@ -139,55 +167,23 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--ink);
-      margin-bottom: 16px;
+      margin-bottom: calc(var(--unit) * 2);
     }
 
     .hero-status .accent {
       color: var(--accent);
     }
 
-    .hero-links {
-      margin-top: 48px;
-      font-family: "Arial Narrow", Arial, sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 13px;
-      text-align: left;
-      /* optional, ensures nav doesn't feel centered */
-    }
-
-    .hero-links a {
-      color: var(--mid);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .hero-links a:hover {
-      color: var(--ink);
-    }
-
-    .link-sep {
-      color: var(--accent);
-      padding: 0 12px;
-      user-select: none;
-    }
-
     /* FAQ Section */
     .faq-section {
-      padding: 80px 32px 120px;
-      border-top: 0.5px solid var(--rule);
-    }
-
-    .faq-container {
-      max-width: var(--frame-width);
-      margin: 0 auto;
+      padding-block: calc(var(--unit) * 10) calc(var(--unit) * 15);
+      border-top: var(--rule) solid var(--c-rule);
     }
 
     .section-header {
-      margin-bottom: 60px;
-      padding-top: 8px;
-      border-top: 0.5px solid var(--accent);
+      margin-bottom: calc(var(--unit) * 8);
+      padding-top: calc(var(--unit) * 1);
+      border-top: var(--rule) solid var(--c-accent);
     }
 
     .section-header-text {
@@ -198,16 +194,16 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--ink);
-      margin-top: 16px;
+      margin-top: calc(var(--unit) * 2);
     }
 
     .section-header-text .index {
       color: var(--accent);
-      margin-left: 8px;
+      margin-left: calc(var(--unit) * 1);
     }
 
     .faq-item {
-      margin-bottom: 48px;
+      margin-bottom: calc(var(--unit) * 6);
     }
 
     .faq-question {
@@ -218,29 +214,20 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--ink);
-      margin-bottom: 16px;
+      margin-bottom: calc(var(--unit) * 2);
       line-height: 1.4;
     }
 
     .faq-question .num {
       color: var(--accent);
-      margin-right: 8px;
+      margin-right: calc(var(--unit) * 1);
     }
 
     .faq-answer {
       color: var(--ink);
       text-align: left;
-      line-height: 1.75;
-      font-size: 15px;
-      /* added: larger body text in FAQ */
-    }
-
-    .faq-answer p {
-      margin-bottom: 16px;
-    }
-
-    .faq-answer p:last-child {
-      margin-bottom: 0;
+      line-height: var(--lh);
+      font-size: var(--fs-body);
     }
 
     .faq-answer strong {
@@ -250,17 +237,15 @@
 
     /* Footer */
     .site-footer {
-      border-top: 0.5px solid var(--rule);
-      padding: 32px;
+      border-top: var(--rule) solid var(--c-rule);
+      padding-block: calc(var(--unit) * 4);
     }
 
     .footer-content {
-      max-width: var(--frame-width);
-      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 11px;
+      font-size: var(--fs-meta);
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
@@ -276,13 +261,13 @@
     /* Responsive */
     @media (max-width: 768px) {
       .site-header {
-        padding: 20px 24px;
+        padding-block: calc(var(--unit) * 2.5);
       }
 
       .header-inner {
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        gap: calc(var(--unit) * 2);
       }
 
       .header-links {
@@ -290,33 +275,21 @@
         font-size: 12px;
       }
 
-      .logo-title {
-        font-size: 18px;
-      }
-
       .hero {
-        min-height: 60vh;
-        padding: 120px 24px 60px;
+        min-height: 32vh;
+        padding-block: calc(var(--unit) * 5);
       }
 
       .hero-status {
         font-size: 24px;
       }
 
-      .hero-links {
-        font-size: 12px;
-      }
-
-      .link-sep {
-        padding: 0 8px;
-      }
-
       .faq-section {
-        padding: 60px 24px 80px;
+        padding-block: calc(var(--unit) * 8) calc(var(--unit) * 10);
       }
 
       .section-header {
-        margin-bottom: 40px;
+        margin-bottom: calc(var(--unit) * 5);
       }
 
       .section-header-text {
@@ -335,11 +308,11 @@
       }
 
       .site-footer {
-        padding: 24px;
+        padding-block: calc(var(--unit) * 3);
       }
 
       .footer-content {
-        font-size: 10px;
+        font-size: calc(var(--fs-meta) - 1px);
       }
     }
   </style>
@@ -348,25 +321,28 @@
 <body>
   <!-- Fixed header with logo -->
   <header class="site-header">
-    <div class="header-inner">
+    <div class="frame header-inner">
       <div class="logo-lockup">
         <div class="logo-title">EARMARK</div>
         <div class="logo-subtitle">MACHINES FOR THINKING</div>
       </div>
 
       <nav class="header-links">
-        <a href="https://github.com/Mikhail-Shakhnazarov/earmark-open-intelligence-protocol" target="_blank" rel="noopener noreferrer">REPO</a>
-        <a href="https://notebooklm.google.com/notebook/cc5da9da-ba15-43e4-bc03-db6f9f818d58" target="_blank" rel="noopener noreferrer">NOTEBOOK</a>
-        <a href="the-corpus-pdf/OPEN_INT_the-corpus.dark.flattened.pdf" target="_blank" rel="noopener noreferrer">LATEST DRAFT</a>
+        <a href="https://github.com/Mikhail-Shakhnazarov/earmark-open-intelligence-protocol" target="_blank"
+          rel="noopener noreferrer">REPO</a>
+        <a href="https://notebooklm.google.com/notebook/cc5da9da-ba15-43e4-bc03-db6f9f818d58" target="_blank"
+          rel="noopener noreferrer">NOTEBOOK</a>
+        <a href="the-corpus-pdf/OPEN_INT_the-corpus.dark.flattened.pdf" target="_blank" rel="noopener noreferrer">LATEST
+          DRAFT</a>
         <a href="https://patreon.com/earmark" target="_blank" rel="noopener noreferrer">PATREON</a>
         <a href="https://bsky.app/profile/earmarkbuild.bsky.social" target="_blank" rel="noopener noreferrer">BSKY</a>
         <a href="https://x.com/MikhailSha26803" target="_blank" rel="noopener noreferrer">TWITTER</a>
       </nav>
     </div>
   </header>
-<!-- Hero section -->
+  <!-- Hero section -->
   <section class="hero">
-    <div class="hero-content">
+    <div class="frame hero-content">
       <h1 class="hero-status">
         FINAL CHECKS <span class="accent">//</span>
       </h1>
@@ -375,7 +351,7 @@
 
   <!-- FAQ Section -->
   <section class="faq-section" id="faq">
-    <div class="faq-container">
+    <div class="frame faq-container">
       <div class="section-header">
         <div class="section-header-text">
           FREQUENTLY ASKED QUESTIONS <span class="index">// 00</span>
@@ -582,7 +558,7 @@
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="footer-content">
+    <div class="frame footer-content">
       <div class="footer-left">EARMARK</div>
       <div class="footer-right">// 01</div>
     </div>
