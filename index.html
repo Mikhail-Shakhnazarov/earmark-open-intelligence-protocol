@@ -60,31 +60,6 @@
       flex: 0 0 auto;
     }
 
-    .header-links {
-      flex: 1 1 auto;
-      display: flex;
-      justify-content: flex-end;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 10px;
-      font-family: "Arial Narrow", Arial, sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 13px;
-      text-align: right;
-    }
-
-    .header-links a {
-      color: var(--mid);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .header-links a:hover {
-      color: var(--ink);
-    }
-
     .logo-title {
       font-family: "Arial Narrow", "Liberation Sans Narrow", Arial, sans-serif;
       font-weight: 700;
@@ -103,6 +78,39 @@
       text-transform: uppercase;
       color: var(--mid);
       line-height: 1;
+    }
+
+    .header-links {
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: flex-end;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0;
+      font-family: "Arial Narrow", Arial, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 13px;
+      text-align: right;
+    }
+
+    .header-links a {
+      color: var(--mid);
+      text-decoration: none;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .header-links a + a::before {
+      content: "//";
+      color: var(--accent);
+      padding: 0 12px;
+      letter-spacing: 0;
+    }
+
+    .header-links a:hover {
+      color: var(--ink);
     }
 
     /* Hero section */
@@ -346,27 +354,17 @@
         <div class="logo-subtitle">MACHINES FOR THINKING</div>
       </div>
 
-
       <nav class="header-links">
-        <a href="https://github.com/Mikhail-Shakhnazarov/earmark-open-intelligence-protocol" target="_blank"
-          rel="noopener noreferrer">REPO</a>
-        <span class="link-sep">//</span>
-        <a href="https://notebooklm.google.com/notebook/cc5da9da-ba15-43e4-bc03-db6f9f818d58" target="_blank"
-          rel="noopener noreferrer">NOTEBOOK</a>
-        <a href="the-corpus-pdf/OPEN_INT_the-corpus.dark.flattened.pdf" target="_blank" rel="noopener noreferrer">LATEST
-          DRAFT</a>
-        <span class="link-sep">//</span>
+        <a href="https://github.com/Mikhail-Shakhnazarov/earmark-open-intelligence-protocol" target="_blank" rel="noopener noreferrer">REPO</a>
+        <a href="https://notebooklm.google.com/notebook/cc5da9da-ba15-43e4-bc03-db6f9f818d58" target="_blank" rel="noopener noreferrer">NOTEBOOK</a>
+        <a href="the-corpus-pdf/OPEN_INT_the-corpus.dark.flattened.pdf" target="_blank" rel="noopener noreferrer">LATEST DRAFT</a>
         <a href="https://patreon.com/earmark" target="_blank" rel="noopener noreferrer">PATREON</a>
-        <span class="link-sep">//</span>
-        <span class="link-sep">//</span>
         <a href="https://bsky.app/profile/earmarkbuild.bsky.social" target="_blank" rel="noopener noreferrer">BSKY</a>
-        <span class="link-sep">//</span>
         <a href="https://x.com/MikhailSha26803" target="_blank" rel="noopener noreferrer">TWITTER</a>
       </nav>
     </div>
   </header>
-
-  <!-- Hero section -->
+<!-- Hero section -->
   <section class="hero">
     <div class="hero-content">
       <h1 class="hero-status">
