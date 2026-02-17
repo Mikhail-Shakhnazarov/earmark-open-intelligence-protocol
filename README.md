@@ -4,7 +4,7 @@
 
 ---
 
-# Earmark Open Intelligence Protocol
+# Open Intelligence Protocol
 
 **Version 1.0** | Berlin, February 2026
 
