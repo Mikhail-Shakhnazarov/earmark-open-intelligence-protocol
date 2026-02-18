@@ -4,7 +4,7 @@
 
 ---
 
-# Earmark Open Intelligence Protocol
+# Open Intelligence Protocol
 
 **Version 1.0** | Berlin, February 2026
 
@@ -97,7 +97,7 @@ This corpus can be read directly (though it is dense, because the language is hi
 
 You cannot stack LLMs on top of each other indefinitely. They **will** hallucinate and lose reference between what is true and what is merely discussion because a context window is a bounded token buffer. Without governance, it becomes soup. Governance requires a termination point, and that point must be human because otherwise, we cannot evaluate the resolution. **A system that produces outputs but cannot evaluate them is a combinatorial engine, not a knowledge system.**
 
-This technology and practice stack scales in parallel. Human beings can cooperate. This is a literacy, and with literacy comes a proper Enlightenment.
+This technology and practice stack scales in parallel. Human beings can cooperate. This is a literacy.
 
 Regarding the practice: I believe LLMs can be used as reflection tools -- to think, to cognate, perhaps -- under the right conditions. I do not want to reduce this to a technical protocol for the tech industry. This is a medium, and the first message in this medium is the medium itself.
 
