@@ -1,9 +1,3 @@
-
-**YOU CAN READ THIS AS AN ARG,**
-**but you don't have to**
-
----
-
 # Open Intelligence Protocol
 
 **Version 1.0** | Berlin, February 2026
