@@ -124,7 +124,9 @@
       text-transform: uppercase;
       color: var(--c-muted);
       line-height: 1;
-    }
+    }
+
+
 
     .header-links {
       flex: 1 1 auto;
@@ -162,7 +164,8 @@
       align-items: baseline;
       flex-wrap: wrap;
     }
-.hero {
+
+    .hero {
       min-height: 40vh;
       display: flex;
       align-items: center;
@@ -172,6 +175,8 @@
 
     .hero-content {
       width: 100%;
+      max-width: 104ch;
+      padding-inline: clamp(8px, 1.5vw, 16px);
       text-align: left;
     }
 
@@ -295,14 +300,16 @@
         flex-direction: column;
         align-items: flex-start;
         gap: calc(var(--unit) * 2);
-      }
+      }
 
-    .header-links {
+
+      .header-links {
         justify-content: flex-start;
         text-align: left;
         font-size: 12px;
       }
-.hero {
+
+      .hero {
         min-height: 32vh;
         padding-block: calc(var(--unit) * 5);
       }
@@ -376,12 +383,12 @@
   <section class="hero">
     <div class="frame hero-content">
       <h1 class="hero-status">
-        INTELLIGENCE IS GOVERNED LANGUAGE <span class="accent">//</span> <a
-          href="https://gemini.google.com/share/8d26faf6d9d2" target="_blank" rel="noopener noreferrer">DEMO & FAQ</a>
+        INTELLIGENCE IS GOVERNED LANGUAGE&nbsp;<span class="accent">//</span> <a
+          href="https://gemini.google.com/share/8d26faf6d9d2" target="_blank" rel="noopener noreferrer">DEMO </a>
       </h1>
     </div>
   </section>
-<!-- FAQ Section -->
+  <!-- FAQ Section -->
   <section class="faq-section" id="faq">
     <div class="frame faq-container">
       <div class="section-header">
@@ -393,7 +400,20 @@
       <div class="faq-item">
         <div class="faq-question"><span class="num">0.</span> WHAT IS THIS?</div>
         <div class="faq-answer">
-          <p>it depends on what you see.</p>
+          <p>A Generalized Protocol for Governed Intelligence.</p>
+
+          <p>The core idea is a protocol that would make context, work, and memory portable across AI vendors and llm
+            runtimes. It
+            now works and is available for free and open source, always. I can build context management engines to those
+            specifications.</p>
+
+          <p> The chatbot above is both an FAQ and a demonstration. The corpus is the governance layer, and the model
+            acts as
+            a runtime that interprets it. Because the corpus is written as structured language, the same artifact can
+            run across different LLM runtimes. The chatbot is
+            simply one execution environment. </p>
+
+          <p> But also: </p>
 
           <p><strong>it's text about text:</strong> this project can be confusing at first because it's circular - it's
             a text-based project about how text operates, but once we move past that:</p>
@@ -425,7 +445,7 @@
         <div class="faq-answer">
           <p>No.</p>
 
-          <p>Earmark is not an assistant. Not an agent. Not a tool. It is a protocol — a method for writing that makes
+          <p>This is not an assistant. Not an agent. Not a tool. It is a protocol — a method for writing that makes
             human thought portable <strong>across</strong> LLM runtimes.</p>
 
           <p>The AI does not "do" the thinking. The AI executes transformations on structured text according to rules
@@ -440,7 +460,7 @@
         <div class="faq-answer">
           <p>Yes.</p>
 
-          <p>The question assumes a boundary that does not hold here. Earmark resists familiar categories because it
+          <p>The question assumes a boundary that does not hold here. The project resists familiar categories because it
             operates as a medium -- something that enables expression and thought rather than something that produces a
             predetermined output.</p>
 
@@ -468,7 +488,7 @@
           <p>Whichever one the operator chooses.</p>
 
           <p>The LLM vendor is a commodity runtime. The intelligence lives in the artifacts -- the structured text the
-            operator writes. Earmark artifacts are portable across Claude, GPT, Gemini, or any future model capable of
+            operator writes. Compliant artifacts are portable across Claude, GPT, Gemini, or any future model capable of
             reading instructions.</p>
 
           <p>This is not a product tied to a specific vendor. It is a method that survives vendor changes, price
@@ -481,7 +501,8 @@
         <div class="faq-answer">
           <p>it's not for everyone, but anyone can use it.</p>
 
-          <p>Earmark is operator-gated, not access-gated. It is designed for someone who already thinks in structured
+          <p>This project is operator-gated, not access-gated. It is designed for someone who already thinks in
+            structured
             text -- or wants to. High agency. Time-scarce. Allergic to tool lock-in. Comfortable with the constraint
             that clarity requires discipline.</p>
         </div>
@@ -563,8 +584,8 @@
         <div class="faq-answer">
           <p>The protocol specifications are open. The operator's content is not.</p>
 
-          <p>Protocol documents -- the rules, the structural obligations, the design language -- are published under
-            CC-BY. Anyone can adopt, adapt, or build on them.</p>
+          <p>Protocol documents -- the rules and the structural obligations -- are published under
+            CC-BY-SA. Anyone can adopt, adapt, or build on them.</p>
 
           <p>The operator's artifacts -- the notes, the writing, the knowledge created using the protocol -- remain
             copyrighted to the operator and private. The protocol does not claim ownership over what the operator
@@ -598,6 +619,3 @@
 </body>
 
 </html>
-
-
-
