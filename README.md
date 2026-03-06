@@ -1,9 +1,3 @@
-
-**YOU CAN READ THIS AS AN ARG,**
-**but you don't have to**
-
----
-
 # Open Intelligence Protocol
 
 **Version 1.0** | Berlin, February 2026
@@ -29,6 +23,17 @@ I want to stress something buried in the Introduction:
 > The protocol serves anyone who needs language model output to be reliable, verifiable, and accumulative rather than disposable. This includes individual practitioners maintaining personal knowledge systems, teams that need consistent governed output across members and tools, and developers building applications that require structured, verifiable text generation.
 > The protocol does not require specialized technical knowledge beyond literacy and the willingness to maintain structured text. The skill is teachable. The tools are available.
 > The barrier is conceptual, not technical: the belief that structural thinking about one's own knowledge requires institutional support. It does not. The public library, not the scholar's study, is the historical parallel.
+
+Programming governance structures in natural language is fun, but it takes time. One switch makes all the difference here: you need to switch from having a conversation with an LLM runtime to **instructing** the LLM runtime. That change takes a bit of perspective shifting, but once you are there, there is no going back.
+
+I think this technology should be free. I strongly believe this is just a form of literacy and knowledge should be free. Pay attention to the licensing when forking.
+
+In the meantime, [hire me](https://www.linkedin.com/in/shakhnazarov/) to build a personalized procedural pipeline and intelligence corpus for you and your organization **and also** see me on [patreon](https://www.patreon.com/c/earmark/membership). 
+
+More info on the Open Intelligence Protocol (OpenIP) project [here](https://earmark.build/)
+
+---
+
 
 ## Overview
 
