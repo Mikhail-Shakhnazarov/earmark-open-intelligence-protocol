@@ -1,4 +1,4 @@
-# Ignore specific design PDFs
+﻿# Ignore specific design PDFs
 01_DARK/09_DESIGN_LANGUAGE_DARK.pdf
 02_LIGHT/09_DESIGN_LANGUAGE.pdf
 
@@ -7,3 +7,4 @@ scripts/
 
 # Ignore markup working directory
 markup/
+

@@ -1,0 +1,256 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <title>EARMARK — what happened to social media will happen to ai.</title>
+  <meta property="og:title" content="what happened to social media will happen to ai." />
+  <meta property="og:description" content="The current trajectory of the ai industry is a myopic drive towards user lock-in and data extraction. This is just social media again, except now the industry has only one lever of user retention: gatekeeping the accumulated context. We know, what happens: data extraction and user lock-in is what happens. Here is what happens:" />
+  <meta name="twitter:title" content="what happened to social media will happen to ai." />
+  <meta name="twitter:description" content="The current trajectory of the ai industry is a myopic drive towards user lock-in and data extraction. This is just social media again, except now the industry has only one lever of user retention: gatekeeping the accumulated context. We know, what happens: data extraction and user lock-in is what happens. Here is what happens:" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://earmark.build/" />
+  <meta property="og:image" content="https://earmark.build/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://earmark.build/og-image.png" />
+
+  <style>
+    :root {
+      --frame-width: 72ch;
+      --frame-pad: clamp(16px, 4vw, 48px);
+
+      --unit: 8px;
+      --rule: 0.5px;
+
+      --fs-body: 15px;
+      --lh: 1.7;
+      --gap-p: calc(var(--unit) * 2);
+
+      --fs-meta: 11px;
+      --fs-lockup-1: 22px;
+      --fs-lockup-2: 8px;
+
+      --c-bg: #222526;
+      --c-fg: #E6DCD2;
+      --c-muted: #8E857D;
+      --c-rule: #4A433E;
+      --c-accent: #7BA8A9;
+
+      --paper: var(--c-bg);
+      --ink: var(--c-fg);
+      --mid: var(--c-muted);
+      --accent: var(--c-accent);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--c-bg);
+      color: var(--c-fg);
+      font-family: "JetBrains Mono", "Liberation Mono", "Courier New", monospace;
+      font-size: var(--fs-body);
+      line-height: var(--lh);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    p { margin: 0; }
+    p + p { margin-top: var(--gap-p); }
+
+    .frame {
+      max-width: var(--frame-width);
+      margin-inline: auto;
+      padding-inline: var(--frame-pad);
+    }
+
+    /* Header with logo */
+    .site-header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: var(--c-bg);
+      border-bottom: var(--rule) solid var(--c-rule);
+      padding-block: calc(var(--unit) * 3);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: calc(var(--unit) * 3);
+    }
+
+    .logo-lockup {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1px;
+    }
+
+    .logo-title {
+      font-family: "Arial Narrow", "Liberation Sans Narrow", Arial, sans-serif;
+      font-weight: 700;
+      font-size: var(--fs-lockup-1);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--c-fg);
+      line-height: 1;
+      margin-bottom: calc(var(--unit) / 2);
+    }
+
+    .logo-subtitle {
+      font-family: "Liberation Mono", "Courier New", monospace;
+      font-size: var(--fs-lockup-2);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--c-muted);
+      line-height: 1;
+    }
+
+    .header-links {
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: flex-end;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: calc(var(--unit) * 1.5);
+      row-gap: calc(var(--unit) * 1);
+      font-family: "Arial Narrow", Arial, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: var(--fs-meta);
+      text-align: right;
+    }
+
+    .header-links a {
+      color: var(--c-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: baseline;
+    }
+
+    .header-links a:hover {
+      color: var(--c-fg);
+    }
+
+    /* Nav groups */
+    .nav-group {
+      display: flex;
+      gap: calc(var(--unit) * 1.5);
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    main {
+      padding-top: calc(var(--unit) * 12);
+      padding-bottom: calc(var(--unit) * 10);
+    }
+
+    .section-header { margin-bottom: calc(var(--unit) * 5); }
+
+    .section-header-text {
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--c-muted);
+    }
+
+    .post-title {
+      font-size: 22px;
+      letter-spacing: 0.04em;
+      text-transform: lowercase;
+      color: var(--c-fg);
+      margin-bottom: calc(var(--unit) * 2);
+    }
+
+    .post-meta {
+      font-size: var(--fs-meta);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--c-muted);
+      margin-bottom: calc(var(--unit) * 6);
+    }
+
+    .post-ol {
+      margin-top: calc(var(--unit) * 2);
+      margin-left: calc(var(--unit) * 3);
+    }
+
+    .post-ol li + li { margin-top: calc(var(--unit) * 2); }
+
+    a { color: var(--c-accent); }
+
+        @media (max-width: 768px) {
+      .site-header {
+        padding-block: calc(var(--unit) * 2);
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: calc(var(--unit) * 2);
+      }
+
+      .header-links {
+        justify-content: flex-start;
+        text-align: left;
+        font-size: 12px;
+      }
+    }
+  </style>
+
+  <script defer src="../brand-lockup.js"></script>
+</head>
+<body>
+      <header class="site-header">
+    <div class="frame header-inner">
+      <div class="logo-lockup">
+        <div class="logo-title">EARMARK</div>
+        <div class="logo-subtitle">MACHINES FOR THINKING</div>
+      </div>
+      <nav class="header-links" aria-label="Primary">
+        <div class="nav-group" aria-label="Text and drafts">
+          <a href="what-happened-to-social-media-will-happen-to-ai.html">BLOG</a>
+          <a href="https://github.com/Mikhail-Shakhnazarov/earmark-open-intelligence-protocol" target="_blank" rel="noopener noreferrer">REPO</a>
+          <a href="../the-corpus-pdf/OPEN_INT_the-corpus.dark.flattened.pdf" target="_blank" rel="noopener noreferrer">LATEST DRAFT</a>
+        </div>
+        <div class="nav-group" aria-label="Social">
+          <a href="https://www.linkedin.com/in/shakhnazarov/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+        </div>
+        <div class="nav-group" aria-label="Support">
+          <a href="https://patreon.com/earmark" target="_blank" rel="noopener noreferrer">PATREON</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="frame">
+      <div class="section-header">
+        <div class="section-header-text">BLOG <span class="index">// 01</span></div>
+      </div>
+
+      <h1 class="post-title">what happened to social media will happen to ai.</h1>
+      <div class="post-meta">2026-03-05</div>
+
+      <article class="post-body">
+        <p>The current trajectory of the ai industry is a myopic drive towards user lock-in and data extraction. This is just social media again, except now the industry has only one lever of user retention: gatekeeping the accumulated context. We know, what happens: data extraction and user lock-in is what happens. Here is what happens:</p>
+
+        <ol class="post-ol">
+        <li><p>Memory is a great feature -- ChatGPT knows your projects, claude knows, how to write your emails, grok knows what elon musk had for breakfast.</p><p>This is a honeymoon phase that is now slowly coming to an end. Most people who daily use ai as a knowledge tool have built up custom project instructions; and Google Gems abound.</p></li>
+        <li><p>Personalization and the loss of control over memory -- chatgpt is sycophantic and coddling, grok is whatever grok is, claude is fighting with the CIA.</p><p>Your assistant develops a personal voice -- the archive of your context is large enough for the language model to develop a personalized tone, a whole personalized persona for you as a user. That can be a subjectively pleasant experience, but the interests that built up the context archive matter; corporate interests have corporate goals. You get nudging, ads, next project suggestions, unprompted tool use, and the resultant agentic chaos.</p></li>
+        <li><p>Assistant as personal operating system and access point to the internet.</p><p>At this point, the user is fully locked in, and is either a part of some closed-source ecosystem like whatever Apple is probably planning (hire me), or as a source of ad revenue for OpenAI. This trajectory is also clear with Google intelligence that spans all google services and, for some, replaces google search itself; as well as with MSft Copilot appearing absolutely everywhere in the Windows ecosystem.</p><p>In the meantime, nobody is stopping anybody from exporting their data and building up a local governance layer and context processing pipeline right on their laptop -- you don't even have to move away from the vendors, just treat them as the replaceable commodity providers that they are.</p></li>
+      </ol>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
+
