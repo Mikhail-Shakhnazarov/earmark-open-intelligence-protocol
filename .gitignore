@@ -8,3 +8,7 @@ scripts/
 # Ignore markup working directory
 markup/
 
+# Ignore frontend build artifacts
+node_modules/
+dist/
+

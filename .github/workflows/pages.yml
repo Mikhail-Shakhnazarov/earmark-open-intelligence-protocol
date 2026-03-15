@@ -21,13 +21,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
       - name: Assemble site
         shell: bash
         run: |
           set -euo pipefail
-          rm -rf dist
-          mkdir -p dist
-          cp -a docs/. dist/
+          cp -a docs/blog dist/blog
+          cp docs/CNAME dist/CNAME
+          cp docs/og-image.jpg dist/og-image.jpg
           cp -a the-corpus-pdf dist/the-corpus-pdf
           touch dist/.nojekyll
 
