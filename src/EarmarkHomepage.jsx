@@ -1,9 +1,12 @@
 import { useLayoutEffect, useRef, useState } from "react";
 
 const essayDrawerPrelude =
-  "Bureaucracy is not a thing. An organization is not a thing. Intelligence is not a thing. Each is a functional arrangement that is often spoken of as though it were an object. Where that pattern settles into language, institutions begin to treat the abstraction as though it carried agency of its own.";
+  "AI does not exist in the strict sense. Language systems can be governed.";
 
 const essayIntroGesture =
+  "Bureaucracy is not a thing. An organization is not a thing. Intelligence is not a thing. These are functional arrangements that are often spoken of as though they were objects. They are not objects. Where that pattern settles into language, institutions begin to treat the abstraction as though it carried agency of its own.";
+
+const essayDrawerOrientation =
   "Language does more than describe these arrangements after the fact. It stabilizes them. It coordinates them. It makes them operative. Intelligence belongs to that category as well. The word names certain kinds of successful cognitive performance, and those performances are recognized, judged, and organized through language.";
 
 const essayMarkdown = [
@@ -1007,6 +1010,9 @@ export default function EarmarkHomepage() {
             </p>
             <p>
               {essayIntroGesture}
+            </p>
+            <p>
+              {essayDrawerOrientation}
             </p>
             {essayBlocks.map((block, index) => {
               if (block.type === "h2") {
